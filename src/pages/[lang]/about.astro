@@ -64,7 +64,7 @@ const allItems = [
       <img src="/img/niv-shapira-studio/niv-shapira.png" class="rounded" alt="Niv Shapira" />
     </div>
     <div class:list={['about-text', { 'text-end': isRTL }]}>
-      <p>{t('about.content')}</p>
+      <p set:html={t('about.content')} />
     </div>
   </div>
 

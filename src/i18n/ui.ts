@@ -14,7 +14,7 @@ export const ui = {
     'page.works': 'Animation and Graphics',
     'page.publications': 'Publications',
     'page.about': 'About',
-    'about.content': `I research the effects of AI on the economy, politics and society, and design solutions for a better technology-enabled world. My work at MOSAIC focuses on developing policy frameworks for AI-driven economic transitions, including models for redistributing AI-generated wealth and building sovereign AI infrastructure. I combine analytical research with visual communication - my background in 3D animation and graphic design helps me make complex ideas accessible and engaging.`,
+    'about.content': `I research the effects of AI on the economy, politics and society, and design solutions for a better technology-enabled world. My work at MOSAIC focuses on developing policy frameworks for AI-driven economic transitions, including models for redistributing AI-generated wealth and building sovereign AI infrastructure. I also co-lead <a href="https://linktr.ee/mabua.haifa" target="_blank">Mabua Haifa</a>, a liberal Jewish Beit Midrash. I combine analytical research with visual communication - my background in 3D animation and graphic design helps me make complex ideas accessible and engaging.`,
   },
   he: {
     'nav.works': 'אנימציה וגרפיקה',
@@ -24,6 +24,6 @@ export const ui = {
     'page.works': 'אנימציה וגרפיקה',
     'page.publications': 'פרסומים',
     'page.about': 'על אודות',
-    'about.content': `ניב עורך ניסויים בעיצוב מגיל צעיר מאוד - החל מבניית מפות עבור המשחק Counter-Strike, כלה בעיצוב בניינים ב-Sketch-Up, עיצוב אתרים, עיצוב לוגואים ועוד. בגיל 14 ניב צפה בסרט שרק ומיד התאהב בעולם האנימציה, ובמיוחד באנימציית תלת-מימד. מאז ניב משחק בסגנונות שונים, ומהלך על הקו שבין אומנות למציאות.`,
+    'about.content': `אני חוקר את ההשפעות של בינה מלאכותית על הכלכלה, הפוליטיקה והחברה, ומתכנן פתרונות לעולם טוב יותר בעידן הטכנולוגיה. עבודתי במוזאיק מתמקדת בפיתוח מסגרות מדיניות למעברים כלכליים מונעי בינה מלאכותית, כולל מודלים לחלוקה מחדש של עושר שנוצר על ידי AI ובניית תשתיות AI ריבוניות. אני גם מוביל במשותף את <a href="https://linktr.ee/mabua.haifa" target="_blank">מבוא חיפה</a>, בית מדרש יהודי ליברלי. אני משלב מחקר אנליטי עם תקשורת חזותית - הרקע שלי באנימציה תלת-ממדית ועיצוב גרפי עוזר לי להפוך רעיונות מורכבים לנגישים ומעניינים.`,
   },
 } as const;
