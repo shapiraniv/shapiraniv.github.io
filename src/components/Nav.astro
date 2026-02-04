@@ -10,8 +10,10 @@ const t = useTranslations(lang);
 
 // Get current path to construct language switch URLs
 const currentPath = Astro.url.pathname;
-const enUrl = currentPath.replace(`/${lang}/`, '/en/');
-const heUrl = currentPath.replace(`/${lang}/`, '/he/');
+// Remove the language prefix and get the rest of the path
+const pathWithoutLang = currentPath.replace(/^\/(en|he)\//, '/');
+const enUrl = '/en' + pathWithoutLang;
+const heUrl = '/he' + pathWithoutLang;
 ---
 
 <nav class="navbar">
