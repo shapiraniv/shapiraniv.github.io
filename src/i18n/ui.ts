@@ -14,7 +14,7 @@ export const ui = {
     'page.works': 'Animation and Graphics',
     'page.publications': 'Publications',
     'page.about': 'About',
-    'about.content': `Niv has been experimenting with design since a very young age - from building maps for Counter-Strike to designing buildings in Sketch-Up, web design, logo design and more. At the age of 14 he watched the movie Shrek and fell in love with animation, and especially 3D animation. Since then Niv has been playing with different kinds of styles, moving on the borderline between art and realism.`,
+    'about.content': `I research the effects of AI on economy, politics and society, and design solutions for a better technology-enabled world. My work at MOSAIC focuses on developing policy frameworks for AI-driven economic transitions, including models for redistributing AI-generated wealth and building sovereign AI infrastructure. I combine analytical research with visual communication - my background in 3D animation and graphic design helps me make complex ideas accessible and engaging.`,
   },
   he: {
     'nav.works': 'אנימציה וגרפיקה',
