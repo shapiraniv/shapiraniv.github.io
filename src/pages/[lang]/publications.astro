@@ -56,7 +56,7 @@ const publications = [
   </div>
   <div class:list={['page-container', 'publications-list', { 'rtl': isRTL }]}>
     {publications.map((pub) => (
-      <article class="publication-item" style={isRTL ? 'flex-direction: row-reverse;' : ''}>
+      <article class="publication-item">
         <div class="publication-thumbnail">
           <a href={pub.pdf} target="_blank">
             <img src={pub.thumbnail} alt={pub.title[lang]} class="img-fluid rounded" />
@@ -66,7 +66,7 @@ const publications = [
           <h3>{pub.title[lang]}</h3>
           <p class="publication-year">{pub.year}</p>
           <p class="publication-description">{pub.description[lang]}</p>
-          <div class="publication-links" style={isRTL ? 'justify-content: flex-end;' : ''}>
+          <div class="publication-links">
             <a href={pub.pdf} target="_blank" class="btn btn-primary btn-sm">
               {lang === 'en' ? 'Download PDF' : 'הורד PDF'}
             </a>
@@ -171,16 +171,12 @@ const publications = [
 
   @media (max-width: 576px) {
     .publication-item {
-      flex-direction: column !important;
+      flex-direction: column;
     }
 
     .publication-thumbnail {
       width: 100%;
       max-width: 300px;
-    }
-
-    .publication-links {
-      justify-content: flex-start !important;
     }
   }
 </style>
