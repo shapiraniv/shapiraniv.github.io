@@ -58,7 +58,7 @@ const publications = [
   </div>
   <div class:list={['page-container', 'publications-list', { 'rtl': isRTL }]}>
     {publications.map((pub) => (
-      <article class="publication-item">
+      <article id={pub.id} class="publication-item">
         <div class="publication-thumbnail">
           <a href={pub.pdf} target="_blank">
             <img src={pub.thumbnail} alt={pub.title[lang]} class="img-fluid rounded" />
