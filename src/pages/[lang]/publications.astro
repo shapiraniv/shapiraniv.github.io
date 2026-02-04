@@ -54,19 +54,19 @@ const publications = [
       {t('page.publications')}
     </h2>
   </div>
-  <div class="page-container publications-list" class:list={{ 'rtl': isRTL }}>
+  <div class:list={['page-container', 'publications-list', { 'rtl': isRTL }]}>
     {publications.map((pub) => (
-      <article class="publication-item">
+      <article class:list={['publication-item', { 'rtl': isRTL }]}>
         <div class="publication-thumbnail">
           <a href={pub.pdf} target="_blank">
             <img src={pub.thumbnail} alt={pub.title[lang]} class="img-fluid rounded" />
           </a>
         </div>
-        <div class="publication-content" class:list={{ 'text-end': isRTL }}>
+        <div class:list={['publication-content', { 'text-end': isRTL }]}>
           <h3>{pub.title[lang]}</h3>
           <p class="publication-year">{pub.year}</p>
           <p class="publication-description">{pub.description[lang]}</p>
-          <div class="publication-links">
+          <div class:list={['publication-links', { 'rtl': isRTL }]}>
             <a href={pub.pdf} target="_blank" class="btn btn-primary btn-sm">
               {lang === 'en' ? 'Download PDF' : 'הורד PDF'}
             </a>
@@ -99,7 +99,7 @@ const publications = [
     border-bottom: 1px solid #eee;
   }
 
-  .rtl .publication-item {
+  .publication-item.rtl {
     flex-direction: row-reverse;
   }
 
@@ -142,8 +142,8 @@ const publications = [
     flex-wrap: wrap;
   }
 
-  .rtl .publication-links {
-    flex-direction: row-reverse;
+  .publication-links.rtl {
+    justify-content: flex-end;
   }
 
   .btn {
@@ -180,13 +180,18 @@ const publications = [
       flex-direction: column;
     }
 
-    .rtl .publication-item {
+    .publication-item.rtl {
       flex-direction: column;
+      align-items: flex-end;
     }
 
     .publication-thumbnail {
       width: 100%;
       max-width: 300px;
+    }
+
+    .publication-links.rtl {
+      justify-content: flex-start;
     }
   }
 </style>
