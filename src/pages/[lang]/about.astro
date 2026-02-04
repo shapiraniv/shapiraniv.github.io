@@ -59,7 +59,7 @@ const allItems = [
     </h2>
   </div>
 
-  <div class="about-intro">
+  <div class="row about-intro">
     <div class="about-image">
       <img src="/img/niv-shapira-studio/niv-shapira.png" class="rounded" alt="Niv Shapira" />
     </div>
@@ -68,7 +68,7 @@ const allItems = [
     </div>
   </div>
 
-  <div class="latest-works">
+  <div class="row latest-works">
     <h3 class:list={{ 'text-end': isRTL }}>Latest Works</h3>
     <div class="works-grid">
       {allItems.map((item) => (
@@ -133,8 +133,9 @@ const allItems = [
 
   .work-item img {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: top;
     transition: opacity 0.2s;
   }
 
