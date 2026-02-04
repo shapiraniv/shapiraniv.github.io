@@ -1,0 +1,20 @@
+{
+  "id": "amplio-3-layers",
+  "title": {
+    "en": "AmplioSpeech 3 Layers Model",
+    "he": "מודל 3 שכבות עבור אמפליוספיץ׳"
+  },
+  "year": "2019",
+  "tags": {
+    "en": ["Infographic", "Vector"],
+    "he": ["אינפוגרפיקה", "אמנות וקטורית"]
+  },
+  "description": {
+    "en": "A 3 layers model for AmplioSpeech",
+    "he": "עיצוב מודל 3 שכבות עבור אמפליוספיץ׳"
+  },
+  "banner": "img/amplio-3-layers/amplio-3-layers-banner-500x500.jpg",
+  "media": [
+    { "src": "img/amplio-3-layers/amplio-3-layers-01.jpg", "type": "image" }
+  ]
+}

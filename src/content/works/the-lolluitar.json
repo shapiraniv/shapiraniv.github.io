@@ -1,0 +1,28 @@
+{
+  "id": "the-lolluitar",
+  "title": {
+    "en": "The Lolluitar",
+    "he": "הלוליטר"
+  },
+  "year": "2015",
+  "tags": {
+    "en": ["3D Animation", "Music", "Music Video"],
+    "he": ["אנימציית תלת-מימד", "מוסיקה", "קליפ"]
+  },
+  "description": {
+    "en": "An animated music video for Gibson Studio Giveaway",
+    "he": "קליפ באנימציה עבור Gibson Studio Giveaway"
+  },
+  "banner": "img/the-lolluitar/the-lolluitar-banner-500x500.jpg",
+  "media": [
+    { "src": "https://www.youtube.com/embed/FCOLRZYDyp0", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/the-lolluitar/the-lolluitar-01.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-02.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-03.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-04.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-05.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-06.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-07.jpg", "type": "image" },
+    { "src": "img/the-lolluitar/the-lolluitar-08.jpg", "type": "image" }
+  ]
+}

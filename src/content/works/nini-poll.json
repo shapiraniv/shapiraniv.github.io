@@ -1,0 +1,24 @@
+{
+  "id": "nini-poll",
+  "title": {
+    "en": "Poll Design for NiNiSpeech",
+    "he": "עיצוב סקר עבור ניניספיץ׳"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["Web Design"],
+    "he": ["עיצוב אתר"]
+  },
+  "description": {
+    "en": "A poll website design for NiNiSpeech (AmplioSpeech)",
+    "he": "עיצוב אתר של סקר עבור ניניספיץ׳ (אמפליוספיץ׳)"
+  },
+  "banner": "img/nini-poll/nini-poll-banner-500x500.jpg",
+  "media": [
+    { "src": "img/nini-poll/nini-poll-01.jpg", "type": "image" },
+    { "src": "img/nini-poll/nini-poll-02.jpg", "type": "image" },
+    { "src": "img/nini-poll/nini-poll-03.jpg", "type": "image" },
+    { "src": "img/nini-poll/nini-poll-04.jpg", "type": "image" },
+    { "src": "img/nini-poll/nini-poll-05.jpg", "type": "image" }
+  ]
+}

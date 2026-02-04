@@ -1,0 +1,42 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: 'en' | 'he';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+// Get current path to construct language switch URLs
+const currentPath = Astro.url.pathname;
+const otherLang = lang === 'en' ? 'he' : 'en';
+const langSwitchUrl = currentPath.replace(`/${lang}/`, `/${otherLang}/`);
+---
+
+<nav class="navbar">
+  <span class="navbar-brand">
+    <a href={`/${lang}/works/`}>
+      <img src={`/img/niv-shapira-studio/niv-shapira-studio-logo-${lang}.svg`} width="144" alt="Niv Shapira Studio" />
+    </a>
+  </span>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a href="/en/works/" class:list={['nav-link', 'language', { active: lang === 'en' }]}>
+        <img src="/img/icons/united-states.svg" alt="English" />
+      </a>
+      <a href="/he/works/" class:list={['nav-link', 'language', { active: lang === 'he' }]}>
+        <img src="/img/icons/israel.svg" alt="עברית" />
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href={`/${lang}/works/`} class="nav-link">{t('nav.works')}</a>
+    </li>
+    <li class="nav-item">
+      <a href={`/${lang}/about/`} class="nav-link">{t('nav.about')}</a>
+    </li>
+    <li class="nav-item">
+      <a href="mailto:shapiraniv@gmail.com" class="nav-link">{t('nav.contact')}</a>
+    </li>
+  </ul>
+</nav>

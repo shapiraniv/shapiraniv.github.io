@@ -1,0 +1,29 @@
+{
+  "id": "tamar-explainer",
+  "title": {
+    "en": "Tamar Robotics Explainer Video",
+    "he": "סרטון תדמית עבור תמר רובוטיקה"
+  },
+  "year": "2020",
+  "tags": {
+    "en": ["3D Animation", "Medical", "Realistic"],
+    "he": ["אנימציית תלת-מימד", "רפואה", "ריאליסטי"]
+  },
+  "description": {
+    "en": "An animated explainer video for Tamar Robotics LTD in association with Studio BaEmek - ",
+    "he": "סרטון תדמית עבור תמר רובוטיקה בע״מ בשיתוף סטודיו בעמק - "
+  },
+  "link": "http://studiobaemek.co.il/",
+  "banner": "img/tamar-explainer/tamar-explainer-banner-500x500.jpg",
+  "media": [
+    { "src": "video/tamar-explainer/tamar-explainer-video-blurred.mp4", "type": "video", "embed": false, "aspectRatio": "16by9" },
+    { "src": "img/tamar-explainer/tamar-explainer-01.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-02.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-03.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-04.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-05.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-06.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-07.jpg", "type": "image" },
+    { "src": "img/tamar-explainer/tamar-explainer-08.jpg", "type": "image" }
+  ]
+}

@@ -1,0 +1,183 @@
+/* Global Styles for Niv Shapira Portfolio */
+
+/* Font */
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+/* Top border accent */
+.body-border-top {
+  border-top: 5px solid #0e507d !important;
+}
+
+/* Banner images */
+.banner {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Works section */
+.works {
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+/* Page header */
+.page-header {
+  margin: 0 0.5rem 0 0.5rem !important;
+  padding: 1.25rem 0.25rem 0.75rem 0.25rem;
+  border-top: 1px solid #1ca4fc;
+  border-bottom: 1px solid #1ca4fc;
+}
+
+.page-header h2 {
+  color: #1ca4fc;
+  margin: 0;
+}
+
+/* Works grid */
+.works-work {
+  padding: 0.35rem !important;
+}
+
+.works-work a {
+  display: block;
+}
+
+.works-work img {
+  transition: opacity 0.2s ease;
+}
+
+.works-work:hover img {
+  opacity: 0.8;
+}
+
+/* Page container */
+.page-container {
+  padding: 1.25rem 0.75rem 0 0.75rem;
+}
+
+/* Works table */
+.works-table {
+  margin-top: 0.75rem;
+  padding: 0 1.25rem 0 1.25rem;
+}
+
+/* Navigation */
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  margin-bottom: 1rem;
+}
+
+.navbar-brand img {
+  max-width: 144px;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 0.25rem;
+}
+
+.nav-item a {
+  padding-left: 0 !important;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item a:hover {
+  color: #1ca4fc;
+}
+
+/* Language switcher */
+.language {
+  display: inline !important;
+}
+
+.language img {
+  width: 1.5rem;
+  height: auto;
+  padding: 0.75rem 0 0.75rem 0;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+.language.active img {
+  filter: none;
+}
+
+.language:hover img {
+  filter: none;
+}
+
+/* RTL support */
+.rtl {
+  direction: rtl !important;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  height: 3rem;
+  background-color: #f0f0f0;
+}
+
+footer p {
+  padding-top: 0.75rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Media gallery spacing */
+.page-container img.img-fluid {
+  margin-bottom: 1rem;
+}
+
+/* Responsive video container */
+.ratio {
+  margin-bottom: 1rem;
+}
+
+/* Custom aspect ratio for vertical videos */
+.ratio-9x16 {
+  --bs-aspect-ratio: 177.78%;
+  max-width: 400px;
+}
+
+/* Ensure minimum page height */
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .page-header {
+    margin: 0 0.25rem 0 0.25rem !important;
+  }
+
+  .works-table {
+    padding: 0 0.5rem;
+  }
+}

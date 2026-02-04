@@ -1,0 +1,25 @@
+{
+  "id": "tamar-business-overview",
+  "title": {
+    "en": "Tamar Robotics Business Overview",
+    "he": "תכנית עסקית של תמר רובוטיקה"
+  },
+  "year": "2020",
+  "tags": {
+    "en": ["Document Design", "Medical"],
+    "he": ["עיצוב מסמכים", "רפואה"]
+  },
+  "description": {
+    "en": "Business overview document design for Tamar Robotics LTD",
+    "he": "עיצוב מסמך התכנית העסקית של תמר רובוטיקה בע״מ"
+  },
+  "banner": "img/tamar-business-overview/tamar-business-overview-banner-blurred-500x500.jpg",
+  "media": [
+    { "src": "img/tamar-business-overview/tamar-business-overview-01-blurred.jpg", "type": "image" },
+    { "src": "img/tamar-business-overview/tamar-business-overview-02-blurred.jpg", "type": "image" },
+    { "src": "img/tamar-business-overview/tamar-business-overview-03-blurred.jpg", "type": "image" },
+    { "src": "img/tamar-business-overview/tamar-business-overview-04-blurred.jpg", "type": "image" },
+    { "src": "img/tamar-business-overview/tamar-business-overview-05-blurred.jpg", "type": "image" },
+    { "src": "img/tamar-business-overview/tamar-business-overview-06-blurred.jpg", "type": "image" }
+  ]
+}

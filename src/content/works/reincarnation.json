@@ -1,0 +1,28 @@
+{
+  "id": "reincarnation",
+  "title": {
+    "en": "Reincarnation",
+    "he": "גלגול נשמות"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["3D Animation"],
+    "he": ["אנימציית תלת-מימד"]
+  },
+  "description": {
+    "en": "A music video",
+    "he": "סרטון אנימציה ומוסיקה"
+  },
+  "banner": "img/reincarnation/reincarnation-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/172859386", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/reincarnation/reincarnation-01.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-02.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-03.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-04.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-05.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-06.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-07.jpg", "type": "image" },
+    { "src": "img/reincarnation/reincarnation-08.jpg", "type": "image" }
+  ]
+}

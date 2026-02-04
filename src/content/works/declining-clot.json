@@ -1,0 +1,22 @@
+{
+  "id": "declining-clot",
+  "title": {
+    "en": "Declining Clot",
+    "he": "קריש מתמוסס"
+  },
+  "year": "2020",
+  "tags": {
+    "en": ["3D Animation", "Medical", "Realistic"],
+    "he": ["אנימציית תלת-מימד", "רפואה", "ריאליסטי"]
+  },
+  "description": {
+    "en": "An animated demonstration of a brain clot declining",
+    "he": "אנימציית הדגמה של קריש דם מתמוסס"
+  },
+  "banner": "img/declining-clot/declining-clot-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/467736179", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/declining-clot/declining-clot-01.jpg", "type": "image" },
+    { "src": "img/declining-clot/declining-clot-02.jpg", "type": "image" }
+  ]
+}

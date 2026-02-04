@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'he' } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: 'en' | 'he' };
+const t = useTranslations(lang);
+const isRTL = lang === 'he';
+---
+
+<BaseLayout title={`${t('page.about')} | Niv Shapira`} lang={lang}>
+  <div class="page-header row">
+    <h2 class:list={{ 'text-end': isRTL, 'ms-auto': isRTL }}>
+      {t('page.about')}
+    </h2>
+  </div>
+  <div class="page-container">
+    <p class:list={{ 'text-end': isRTL, 'ms-auto': isRTL, 'rtl': isRTL }}>
+      {t('about.content')}
+      <br /><br />
+      <img src="/img/niv-shapira-studio/niv-shapira-250x250.jpg" class="rounded img-fluid" alt="Niv Shapira" />
+    </p>
+  </div>
+</BaseLayout>

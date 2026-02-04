@@ -1,0 +1,53 @@
+---
+interface MediaItem {
+  src: string;
+  type: 'image' | 'video';
+  embed?: boolean;
+  aspectRatio?: string;
+}
+
+interface Props {
+  media: MediaItem[];
+}
+
+const { media } = Astro.props;
+
+function getAspectRatioClass(ratio?: string): string {
+  if (!ratio) return 'ratio-16x9';
+  switch (ratio) {
+    case '16by9': return 'ratio-16x9';
+    case '4by3': return 'ratio-4x3';
+    case '9by16': return 'ratio-9x16';
+    case '1by1': return 'ratio-1x1';
+    default: return 'ratio-16x9';
+  }
+}
+---
+
+{media.map((item) => (
+  item.type === 'video' ? (
+    <div class={`ratio ${getAspectRatioClass(item.aspectRatio)} mb-3`}>
+      {item.embed ? (
+        <iframe
+          src={item.src}
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      ) : (
+        <video controls>
+          <source src={`/${item.src}`} type="video/mp4" />
+        </video>
+      )}
+    </div>
+  ) : (
+    <img src={`/${item.src}`} class="img-fluid mb-3" alt="" loading="lazy" />
+  )
+))}
+
+<style>
+  .ratio-9x16 {
+    --bs-aspect-ratio: 177.78%;
+  }
+</style>

@@ -1,0 +1,26 @@
+{
+  "id": "al-af-shmo",
+  "title": {
+    "en": "Al Af Shmo (Despite Its Name)",
+    "he": "על אף שמו"
+  },
+  "year": "2020",
+  "tags": {
+    "en": ["3D Animation", "Art", "Poem"],
+    "he": ["אנימציית תלת-מימד", "אמנות", "שיר"]
+  },
+  "description": {
+    "en": "An animated poem",
+    "he": "סרטון אנימציה לשיר"
+  },
+  "banner": "img/al-af-shmo/al-af-shmo-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/467738055", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/al-af-shmo/al-af-shmo-01.jpg", "type": "image" },
+    { "src": "img/al-af-shmo/al-af-shmo-02.jpg", "type": "image" },
+    { "src": "img/al-af-shmo/al-af-shmo-03.jpg", "type": "image" },
+    { "src": "img/al-af-shmo/al-af-shmo-04.jpg", "type": "image" },
+    { "src": "img/al-af-shmo/al-af-shmo-05.jpg", "type": "image" },
+    { "src": "img/al-af-shmo/al-af-shmo-06.jpg", "type": "image" }
+  ]
+}

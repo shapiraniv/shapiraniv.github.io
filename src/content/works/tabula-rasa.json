@@ -1,0 +1,29 @@
+{
+  "id": "tabula-rasa",
+  "title": {
+    "en": "Tabula Rasa",
+    "he": "טאבולה ראסה"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["3D Animation", "Music"],
+    "he": ["אנימציית תלת-מימד", "מוסיקה"]
+  },
+  "description": {
+    "en": "A music video",
+    "he": "אנימציה ומוסיקה"
+  },
+  "banner": "img/tabula-rasa/tabula-rasa-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/468592099", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/tabula-rasa/tabula-rasa-01.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-02.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-03.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-04.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-05.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-06.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-07.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-08.jpg", "type": "image" },
+    { "src": "img/tabula-rasa/tabula-rasa-09.jpg", "type": "image" }
+  ]
+}

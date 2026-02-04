@@ -1,0 +1,31 @@
+{
+  "id": "nini-gia",
+  "title": {
+    "en": "NiNiSpeech GIA 2016 Animation",
+    "he": "אנימציה עבור מצגת ה-GIA של ניניספיץ׳"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["3D Animation"],
+    "he": ["אנימציית תלת-מימד"]
+  },
+  "description": {
+    "en": "A series of short animations for NiNiSpeech (AmplioSpeech)'s GIA 2016 conference presentation",
+    "he": "סדרת אנימציות קצרות עבור המצגת של ניניספיץ׳ (אמפליוספיץ׳) ב-GIA 2016"
+  },
+  "banner": "img/nini-gia/nini-gia-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/177206770", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/nini-gia/nini-gia-01.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-02.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-03.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-04.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-05.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-06.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-07.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-08.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-09.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-10.jpg", "type": "image" },
+    { "src": "img/nini-gia/nini-gia-11.jpg", "type": "image" }
+  ]
+}

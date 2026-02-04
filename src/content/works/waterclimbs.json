@@ -1,0 +1,28 @@
+{
+  "id": "waterclimbs",
+  "title": {
+    "en": "Waterclimbs",
+    "he": "סולמות מים"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["3D Animation", "Music"],
+    "he": ["אנימציית תלת-מימד", "מוסיקה"]
+  },
+  "description": {
+    "en": "A vertical music video for Vimeo Weekend Challenge",
+    "he": "סרטון מוסיקה ואנימציה אנכי עבור Vimeo Weekend Challenge"
+  },
+  "banner": "img/waterclimbs/waterclimbs-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/179946344", "type": "video", "embed": true, "aspectRatio": "9by16" },
+    { "src": "img/waterclimbs/waterclimbs-01.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-02.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-03.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-04.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-05.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-06.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-07.jpg", "type": "image" },
+    { "src": "img/waterclimbs/waterclimbs-08.jpg", "type": "image" }
+  ]
+}

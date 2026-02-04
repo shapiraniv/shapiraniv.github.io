@@ -1,0 +1,22 @@
+{
+  "id": "niv-in-a-hood-website",
+  "title": {
+    "en": "NIV in a Hood Website",
+    "he": "אתר אינטרנט עבור NIV in a Hood"
+  },
+  "year": "2020",
+  "tags": {
+    "en": ["Website Design & Build", "Medical"],
+    "he": ["עיצוב ובניית אתר", "רפואה"]
+  },
+  "description": {
+    "en": "Designing and building the NIV in a Hood website",
+    "he": "עיצוב ובנייה של האתר של NIV in a Hood"
+  },
+  "banner": "img/niv-in-a-hood-website/niv-in-a-hood-website-banner-500x500.jpg",
+  "media": [
+    { "src": "img/niv-in-a-hood-website/niv-in-a-hood-website-01.jpg", "type": "image" },
+    { "src": "img/niv-in-a-hood-website/niv-in-a-hood-website-02.jpg", "type": "image" },
+    { "src": "img/niv-in-a-hood-website/niv-in-a-hood-website-03.jpg", "type": "image" }
+  ]
+}

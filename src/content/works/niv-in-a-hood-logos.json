@@ -1,0 +1,21 @@
+{
+  "id": "niv-in-a-hood-logos",
+  "title": {
+    "en": "NIV in a Hood Logos",
+    "he": "לוגואים עבור NIV in a Hood"
+  },
+  "year": "2020",
+  "tags": {
+    "en": ["Logo Design", "Medical"],
+    "he": ["עיצוב לוגואים", "רפואה"]
+  },
+  "description": {
+    "en": "Logo design for NIV in a Hood",
+    "he": "עיצוב לוגואים עבור NIV in a Hood"
+  },
+  "banner": "img/niv-in-a-hood-logos/niv-in-a-hood-logos-banner-500x500.jpg",
+  "media": [
+    { "src": "img/niv-in-a-hood-logos/niv-in-a-hood-logos-01.jpg", "type": "image" },
+    { "src": "img/niv-in-a-hood-logos/niv-in-a-hood-logos-02.jpg", "type": "image" }
+  ]
+}

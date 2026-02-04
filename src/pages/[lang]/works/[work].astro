@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import MediaGallery from '../../../components/MediaGallery.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const works = await getCollection('works');
+  const paths = [];
+
+  for (const lang of ['en', 'he']) {
+    for (const work of works) {
+      paths.push({
+        params: { lang, work: work.data.id },
+        props: { workData: work.data, lang },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { workData, lang } = Astro.props as { workData: any; lang: 'en' | 'he' };
+const t = useTranslations(lang);
+const isRTL = lang === 'he';
+---
+
+<BaseLayout title={`${workData.title[lang]} | Niv Shapira`} lang={lang}>
+  <div class="page-header row">
+    <h2 class:list={{ 'text-end': isRTL, 'ms-auto': isRTL, 'rtl': isRTL }}>
+      {t('page.works')}
+    </h2>
+  </div>
+  <div class="page-container" class:list={{ 'text-end': isRTL, 'rtl': isRTL }}>
+    <h3>{workData.title[lang]}</h3>
+    <p>{workData.year}</p>
+    <p>
+      {workData.description[lang]}
+      {workData.link && (
+        <a href={workData.link} target="_blank" rel="noopener noreferrer">
+          {workData.link}
+        </a>
+      )}
+    </p>
+    <MediaGallery media={workData.media} />
+  </div>
+</BaseLayout>

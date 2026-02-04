@@ -1,0 +1,23 @@
+{
+  "id": "nini-games",
+  "title": {
+    "en": "Games Demo for NiNiSpeech",
+    "he": "דמו של משחקים עבור ניניספיץ׳"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["Game Design", "2D Animation"],
+    "he": ["עיצוב משחקים", "אנימציית דו-מימד"]
+  },
+  "description": {
+    "en": "A demo of games for NiNiSpeech (AmplioSpeech)'s app",
+    "he": "דמו של משחקים עבור האפליקציה של ניניספיץ׳ (אמפליוספיץ׳)"
+  },
+  "banner": "img/nini-games/nini-games-banner-500x500.jpg",
+  "media": [
+    { "src": "https://www.youtube.com/embed/cdtDCbqGraM", "type": "video", "embed": true, "aspectRatio": "4by3" },
+    { "src": "img/nini-games/nini-games-01.jpg", "type": "image" },
+    { "src": "img/nini-games/nini-games-02.jpg", "type": "image" },
+    { "src": "img/nini-games/nini-games-03.jpg", "type": "image" }
+  ]
+}

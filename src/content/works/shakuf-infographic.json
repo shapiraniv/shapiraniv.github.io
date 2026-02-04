@@ -1,0 +1,32 @@
+{
+  "id": "shakuf-infographic",
+  "title": {
+    "en": "Infographics For Shakuf",
+    "he": "אינפוגרפיקה עבור ׳שקוף׳"
+  },
+  "year": "2019",
+  "tags": {
+    "en": ["Infographic", "Vector"],
+    "he": ["אינפוגרפיקה", "וקטור"]
+  },
+  "description": {
+    "en": "Infographics for an article by Shakuf: ",
+    "he": "אינפוגרפיקה עבור כתבה של ׳שקוף׳: "
+  },
+  "link": "https://shkifut.info/2019/10/data/",
+  "banner": "img/shakuf-infographics/shakuf-infographics-banner-500x500.jpg",
+  "media": [
+    { "src": "img/shakuf-infographics/shakuf-infographics-01.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-02.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-03.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-04.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-05.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-06.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-07.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-08.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-09.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-10.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-11.jpg", "type": "image" },
+    { "src": "img/shakuf-infographics/shakuf-infographics-12.jpg", "type": "image" }
+  ]
+}

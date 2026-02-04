@@ -1,0 +1,27 @@
+{
+  "id": "no-more-walking-to-school",
+  "title": {
+    "en": "No More Walking To School",
+    "he": "אין עוד הליכות לבית ספר"
+  },
+  "year": "2016",
+  "tags": {
+    "en": ["2D Animation", "Live Action"],
+    "he": ["אנימציית דו-מימד", "לייב אקשן"]
+  },
+  "description": {
+    "en": "A video of a commute for Vimeo Weekend Challenge",
+    "he": "סרטון של שגרת ההליכה לבית הספר עבור Vimeo Weekend Challenge"
+  },
+  "banner": "img/no-more-walking-to-school/no-more-walking-to-school-banner-500x500.jpg",
+  "media": [
+    { "src": "https://player.vimeo.com/video/172588959", "type": "video", "embed": true, "aspectRatio": "16by9" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-01.jpg", "type": "image" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-02.jpg", "type": "image" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-03.jpg", "type": "image" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-04.jpg", "type": "image" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-05.jpg", "type": "image" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-06.jpg", "type": "image" },
+    { "src": "img/no-more-walking-to-school/no-more-walking-to-school-07.jpg", "type": "image" }
+  ]
+}
