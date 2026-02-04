@@ -1,0 +1,23 @@
+{
+  "id": "tamar-explainer-2",
+  "title": {
+    "en": "An animated explainer video for Tamar Robotics LTD",
+    "he": "סרטון הסבר מונפש עבור תמר רובוטיקה בע״מ"
+  },
+  "year": "2023",
+  "tags": {
+    "en": ["3D Animation", "Medical", "Explainer"],
+    "he": ["אנימציית תלת-מימד", "רפואה", "הסבר"]
+  },
+  "description": {
+    "en": "",
+    "he": ""
+  },
+  "banner": "img/tamar-explainer-2/tamar-explainer-2-01.png",
+  "media": [
+    { "src": "img/tamar-explainer-2/tamar-explainer-2-01.png", "type": "image" },
+    { "src": "img/tamar-explainer-2/tamar-explainer-2-02.png", "type": "image" },
+    { "src": "img/tamar-explainer-2/tamar-explainer-2-03.png", "type": "image" },
+    { "src": "img/tamar-explainer-2/tamar-explainer-2-04.png", "type": "image" }
+  ]
+}
