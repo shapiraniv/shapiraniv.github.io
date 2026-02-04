@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { useTranslations } from '../../i18n/utils';
+import { getCollection } from 'astro:content';
 
 export function getStaticPaths() {
   return [
@@ -12,6 +13,43 @@ export function getStaticPaths() {
 const { lang } = Astro.params as { lang: 'en' | 'he' };
 const t = useTranslations(lang);
 const isRTL = lang === 'he';
+
+// Get graphics works
+const allWorks = await getCollection('works');
+const sortedWorks = allWorks.sort((a, b) => parseInt(b.data.year) - parseInt(a.data.year));
+
+// Publications data
+const publications = [
+  {
+    type: 'publication',
+    id: 'mosaic-model',
+    title: { en: 'The MOSAIC Model', he: 'מודל מוזאיק' },
+    thumbnail: '/publications/mosaic-model-thumbnail.jpeg',
+    link: '/publications/mosaic-model.pdf',
+    year: '2026'
+  },
+  {
+    type: 'publication',
+    id: 'mosaic-ai-infra',
+    title: { en: 'AI as National Infrastructure', he: 'בינה מלאכותית כתשתית לאומית' },
+    thumbnail: '/publications/mosaic-ai-infra-thumbnail.jpeg',
+    link: '/publications/mosaic-ai-infra.pdf',
+    year: '2025'
+  }
+];
+
+// Combine and sort by year, take latest 5
+const allItems = [
+  ...publications,
+  ...sortedWorks.slice(0, 5).map(w => ({
+    type: 'graphics',
+    id: w.data.id,
+    title: w.data.title,
+    thumbnail: w.data.banner,
+    link: `/${lang}/graphics/${w.data.id}/`,
+    year: w.data.year
+  }))
+].sort((a, b) => parseInt(b.year) - parseInt(a.year)).slice(0, 5);
 ---
 
 <BaseLayout title={`${t('page.about')} | Niv Shapira`} lang={lang}>
@@ -20,11 +58,115 @@ const isRTL = lang === 'he';
       {t('page.about')}
     </h2>
   </div>
-  <div class="row page-container">
-    <p class:list={{ 'text-end': isRTL, 'ms-auto': isRTL, 'rtl': isRTL }}>
-      {t('about.content')}
-      <br /><br />
-      <img src="/img/niv-shapira-studio/niv-shapira.png" class="rounded img-fluid" alt="Niv Shapira" style="max-width: 250px;" />
-    </p>
+
+  <div class="about-intro">
+    <div class="about-image">
+      <img src="/img/niv-shapira-studio/niv-shapira.png" class="rounded" alt="Niv Shapira" />
+    </div>
+    <div class:list={['about-text', { 'text-end': isRTL }]}>
+      <p>{t('about.content')}</p>
+    </div>
+  </div>
+
+  <div class="latest-works">
+    <h3 class:list={{ 'text-end': isRTL }}>Latest Works</h3>
+    <div class="works-grid">
+      {allItems.map((item) => (
+        <a href={item.type === 'publication' ? item.link : item.link} target={item.type === 'publication' ? '_blank' : '_self'} class="work-item">
+          <img src={item.type === 'graphics' ? `/${item.thumbnail}` : item.thumbnail} alt={item.title[lang]} class="rounded" />
+          <span class="work-title">{item.title[lang]}</span>
+        </a>
+      ))}
+    </div>
   </div>
 </BaseLayout>
+
+<style>
+  .about-intro {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 1.25rem;
+    align-items: flex-start;
+  }
+
+  .about-image {
+    flex-shrink: 0;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: auto;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-text p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .latest-works {
+    padding: 1.5rem 1.25rem;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+  }
+
+  .latest-works h3 {
+    color: #1ca4fc;
+    margin-bottom: 1rem;
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .work-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .work-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transition: opacity 0.2s;
+  }
+
+  .work-item:hover img {
+    opacity: 0.8;
+  }
+
+  .work-title {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .works-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .about-intro {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about-text {
+      text-align: center !important;
+    }
+
+    .works-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
