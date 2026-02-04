@@ -102,6 +102,16 @@ body {
   color: #1ca4fc;
 }
 
+.nav-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-icons a {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* Language switcher */
 .language {
   display: inline !important;
