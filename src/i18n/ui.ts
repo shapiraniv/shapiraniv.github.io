@@ -14,7 +14,7 @@ export const ui = {
     'page.works': 'Animation and Graphics',
     'page.publications': 'Publications',
     'page.about': 'About',
-    'about.content': `I research the effects of AI on economy, politics and society, and design solutions for a better technology-enabled world. My work at MOSAIC focuses on developing policy frameworks for AI-driven economic transitions, including models for redistributing AI-generated wealth and building sovereign AI infrastructure. I combine analytical research with visual communication - my background in 3D animation and graphic design helps me make complex ideas accessible and engaging.`,
+    'about.content': `I research the effects of AI on the economy, politics and society, and design solutions for a better technology-enabled world. My work at MOSAIC focuses on developing policy frameworks for AI-driven economic transitions, including models for redistributing AI-generated wealth and building sovereign AI infrastructure. I combine analytical research with visual communication - my background in 3D animation and graphic design helps me make complex ideas accessible and engaging.`,
   },
   he: {
     'nav.works': 'אנימציה וגרפיקה',
