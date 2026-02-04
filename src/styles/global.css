@@ -21,7 +21,7 @@ body {
 /* Page header */
 .page-header {
   margin: 0 0.5rem 0 0.5rem !important;
-  padding: 1.25rem 0.25rem 0.75rem 0.25rem;
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
   border-top: 1px solid #1ca4fc;
   border-bottom: 1px solid #1ca4fc;
 }
