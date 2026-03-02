@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'he' } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: 'en' | 'he' };
+const t = useTranslations(lang);
+const isRTL = lang === 'he';
+---
+
+<BaseLayout title={`${t('nav.substack')} | Niv Shapira`} lang={lang}>
+  <div class="page-header row">
+    <h2 class:list={{ 'text-end': isRTL, 'ms-auto': isRTL }}>
+      {t('nav.substack')}
+    </h2>
+  </div>
+  <div class:list={['substack-feed', { 'rtl': isRTL }]}>
+    <div id="substack-posts">
+      <p class="loading-text">Loading posts...</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  async function loadSubstackFeed() {
+    const container = document.getElementById('substack-posts');
+    if (!container) return;
+
+    try {
+      const res = await fetch(
+        'https://api.rss2json.com/v1/api.json?rss_url=https://nivshapira.substack.com/feed'
+      );
+      const data = await res.json();
+
+      if (data.status !== 'ok' || !data.items?.length) {
+        container.innerHTML = '<p>No posts found.</p>';
+        return;
+      }
+
+      container.innerHTML = data.items
+        .map((item: any) => `
+          <div class="substack-post-embed">
+            <a data-post-link href="${item.link}"></a>
+          </div>
+        `)
+        .join('');
+
+      const script = document.createElement('script');
+      script.src = 'https://substack.com/embedjs/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    } catch {
+      container.innerHTML = '<p>Failed to load posts.</p>';
+    }
+  }
+
+  loadSubstackFeed();
+</script>
+
+<style>
+  .substack-feed {
+    padding: 0 1.25rem;
+  }
+
+  .loading-text {
+    color: #666;
+  }
+</style>
+
+<style is:global>
+  .substack-post-embed {
+    margin-bottom: 1.5rem;
+  }
+</style>

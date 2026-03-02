@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # astro
 .astro/
+
+# claude
+CLAUDE.md
+.playwright-mcp/
